@@ -64,7 +64,7 @@ public class GameService {
                 board.dropDisc(column, computer.getDisc());
                 board.printBoard();
                 if (board.checkWin(computer.getDisc())) {
-                    System.out.println(computer.getName() + " nyert!");
+                    System.out.println("Gép nyert!");
                     HighScoreUtil.incrementScore(computer.getName());
                     break;
                 }
